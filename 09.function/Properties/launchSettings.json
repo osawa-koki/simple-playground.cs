@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "09.function": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
