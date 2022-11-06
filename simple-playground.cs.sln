@@ -77,8 +77,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35.file_directory", "35.fil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "36.stream", "36.stream\36.stream.csproj", "{47960757-17B6-4619-8FF9-0DE00D356C03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37.http", "37.http\37.http.csproj", "{C5CE0A0A-EF0E-4EAE-ACF6-E7521EDD6293}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38.database", "38.database\38.database.csproj", "{768418AA-844A-4C20-864C-C3E54A396D13}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "39.mail", "39.mail\39.mail.csproj", "{B0CAE6E4-CA27-4246-8320-AF207DB079E2}"
@@ -88,6 +86,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41.process", "41.process\41.process.csproj", "{BB9767F5-A8D7-4DC6-8E33-74FE75E757C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42.cryptography", "42.cryptography\42.cryptography.csproj", "{FA363D0F-10CE-473D-B172-77F21A3B2E28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37.network", "37.network\37.network.csproj", "{75D78AC9-880D-4248-B304-63220C9E9692}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,10 +243,6 @@ Global
 		{47960757-17B6-4619-8FF9-0DE00D356C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47960757-17B6-4619-8FF9-0DE00D356C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47960757-17B6-4619-8FF9-0DE00D356C03}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5CE0A0A-EF0E-4EAE-ACF6-E7521EDD6293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5CE0A0A-EF0E-4EAE-ACF6-E7521EDD6293}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5CE0A0A-EF0E-4EAE-ACF6-E7521EDD6293}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5CE0A0A-EF0E-4EAE-ACF6-E7521EDD6293}.Release|Any CPU.Build.0 = Release|Any CPU
 		{768418AA-844A-4C20-864C-C3E54A396D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{768418AA-844A-4C20-864C-C3E54A396D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{768418AA-844A-4C20-864C-C3E54A396D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -267,6 +263,10 @@ Global
 		{FA363D0F-10CE-473D-B172-77F21A3B2E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA363D0F-10CE-473D-B172-77F21A3B2E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA363D0F-10CE-473D-B172-77F21A3B2E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D78AC9-880D-4248-B304-63220C9E9692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D78AC9-880D-4248-B304-63220C9E9692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D78AC9-880D-4248-B304-63220C9E9692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D78AC9-880D-4248-B304-63220C9E9692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

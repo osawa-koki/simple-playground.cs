@@ -103,7 +103,7 @@ internal class Person
 
   internal void SayHi()
   {
-    Console.WriteLine("Hi!");
+    Console.WriteLine("Hi, I am a Person.");
   }
 }
 
@@ -124,10 +124,15 @@ internal class Student : Person
     Console.WriteLine($"Hello, my name is {Name} and I am {Age} years old.\nI live in {Address} and I go to {School}.");
   }
 
-  internal void SayHi()
+  internal new void SayHi()
   {
     base.SayHi();
     Console.WriteLine("Hi, I'm a student!");
+  }
+  
+  internal void Study()
+  {
+    Console.WriteLine("I'm studying!");
   }
 
 }

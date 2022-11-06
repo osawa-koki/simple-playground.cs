@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "37.network": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
