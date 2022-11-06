@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "37.http": {
+    "39.namespace": {
       "commandName": "Project"
     },
     "Docker": {

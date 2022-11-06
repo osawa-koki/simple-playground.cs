@@ -5,16 +5,16 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["37.http/37.http.csproj", "37.http/"]
-RUN dotnet restore "37.http/37.http.csproj"
+COPY ["39.namespace/39.namespace.csproj", "39.namespace/"]
+RUN dotnet restore "39.namespace/39.namespace.csproj"
 COPY . .
-WORKDIR "/src/37.http"
-RUN dotnet build "37.http.csproj" -c Release -o /app/build
+WORKDIR "/src/39.namespace"
+RUN dotnet build "39.namespace.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "37.http.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "39.namespace.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "37.http.dll"]
+ENTRYPOINT ["dotnet", "39.namespace.dll"]
