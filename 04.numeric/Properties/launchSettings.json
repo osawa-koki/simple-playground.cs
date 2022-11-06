@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "04.numeric": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
