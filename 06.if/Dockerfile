@@ -5,16 +5,16 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["06.if/06.if.csproj", "06.if/"]
-RUN dotnet restore "06.if/06.if.csproj"
+COPY ["06.logical/06.logical.csproj", "06.logical/"]
+RUN dotnet restore "06.logical/06.logical.csproj"
 COPY . .
-WORKDIR "/src/06.if"
-RUN dotnet build "06.if.csproj" -c Release -o /app/build
+WORKDIR "/src/06.logical"
+RUN dotnet build "06.logical.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "06.if.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "06.logical.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "06.if.dll"]
+ENTRYPOINT ["dotnet", "06.logical.dll"]

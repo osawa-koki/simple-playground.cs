@@ -5,16 +5,16 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["string/string.csproj", "string/"]
-RUN dotnet restore "string/string.csproj"
+COPY ["05.string/05.string.csproj", "05.string/"]
+RUN dotnet restore "05.string/05.string.csproj"
 COPY . .
-WORKDIR "/src/string"
-RUN dotnet build "string.csproj" -c Release -o /app/build
+WORKDIR "/src/05.string"
+RUN dotnet build "05.string.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "string.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "05.string.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "string.dll"]
+ENTRYPOINT ["dotnet", "05.string.dll"]
