@@ -135,6 +135,48 @@ internal class Program
 
     // >>> osawa_before_born: Mr. OSAWA, 0, Soka
 
+    // ☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★
+    // ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
+    // ☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★
+    // ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
+    // ☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★
+
+    // 最後にアクセス修飾子について説明します。
+    // アクセス修飾子とは、クラスやメソッド、プロパティなどのアクセス権を制御するためのものです。
+    // 以下のように、アクセス修飾子を指定することで、
+    // そのクラスやメソッド、プロパティなどをどのようにアクセスできるかを制御することができます。
+
+    // public: どこからでもアクセスできる
+    // private: 同じクラス内からのみアクセスできる
+    // protected: 同じクラス内、または継承したクラスからのみアクセスできる
+    // internal: 同じアセンブリ内からのみアクセスできる
+    // protected internal: 同じアセンブリ内、または継承したクラスからのみアクセスできる
+
+    // ref: https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/keywords/access-modifiers
+
+    // では、「AccessChecker」クラスにそれぞれのアクセス修飾子が付されたメンバを用意したので、
+    // それぞれのアクセス修飾子がどのようにアクセスできるかを確認してみましょう。
+
+    AccessChecker access_checker = new();
+
+    // publicメンバにアクセス
+    access_checker._public = "public_member";
+
+    // privateメンバにアクセス
+    // access_checker._private = "private_member"; // エラー
+
+    // protectedメンバにアクセス
+    // access_checker._protected = "protected_member"; // エラー
+
+    // internalメンバにアクセス
+    access_checker._internal = "internal_member";
+
+    // protected internalメンバにアクセス
+    access_checker._protected_internal = "protected_internal_member";
+
+    // また、アクセス修飾子を指定しない場合は、
+    // デフォルトで「private」が指定されます。
+    
   }
 }
 
@@ -197,5 +239,12 @@ internal class Person
 }
 
 
-
+public class AccessChecker
+{
+  public string _public = "I am public";
+  private string _private = "I am private";
+  protected string _protected = "I am protected";
+  internal string _internal = "I am internal";
+  protected internal string _protected_internal = "I am protected internal";
+}
 
