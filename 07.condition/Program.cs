@@ -43,7 +43,8 @@
 if (true)
 {
   Console.WriteLine("条件式がtrueの場合に実行される処理");
-} else
+}
+else
 {
   Console.WriteLine("条件式がfalseの場合に実行される処理");
 }

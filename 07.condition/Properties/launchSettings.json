@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "06.if": {
+    "07.condition": {
       "commandName": "Project"
     },
     "Docker": {
