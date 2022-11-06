@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "06.if": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
