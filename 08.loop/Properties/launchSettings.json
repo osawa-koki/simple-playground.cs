@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "08.loop": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
