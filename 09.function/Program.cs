@@ -134,7 +134,57 @@ internal class Program
     // 15
     // 55
     // 120
-    
+
+    // ☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★
+    // ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
+    // ☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★
+    // ★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆
+    // ☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★
+
+    // 次にオーバーロードについて説明します。
+    // オーバーロードとは、同じ名前の関数を複数定義することです。
+    // 例えば、以下の関数は、第一引数と第二引数にint型の引数を複数指定できます。
+    // int SumOverload(params int[] values)
+    // {
+    //     int sum = 0;
+    //     foreach (int value in values)
+    //     {
+    //         sum += value;
+    //     }
+    //     return sum;
+    // }
+    //
+    // また、以下の関数は、第一引数と第二引数にdouble型の引数を複数指定できます。
+    // double SumOverload(params double[] values)
+    // {
+    //     double sum = 0;
+    //     foreach (double value in values)
+    //     {
+    //         sum += value;
+    //     }
+    //     return sum;
+    // }
+    //
+
+    // では、この引数をオーバーロードで呼び出してみましょう♪
+
+    // SumOverload関数の呼び出し
+    Console.WriteLine(SumOverload(1, 2, 3, 4, 5));
+    Console.WriteLine(SumOverload(1.0, 2.0, 3.0, 4.0, 5.0));
+
+    // >>> 実行結果
+    // overload I am int.
+    // 15
+    // overload I am double.
+    // 15
+
+    // オーバーロードが発生するためには、以下の条件を満たす必要があります。
+    // 1. 同じ名前の関数を複数定義する。
+    // 2. 引数の型、引数の数、引数の順番が異なる。
+    // 3. 戻り値の型が異なる。
+
+    // 呼びだされる関数は、その呼び出し元の環境にあったものになります。
+
   }
 
   // Add関数の定義
@@ -171,6 +221,34 @@ internal class Program
   {
     int sum = 0;
     foreach (int value in values)
+    {
+      sum += value;
+    }
+    return sum;
+  }
+
+  // オーバーロードの定義
+  // 第一引数: values (int型の配列)
+  // 戻り値: int型
+  private static int SumOverload(params int[] values)
+  {
+    Console.WriteLine("overload I am int.");
+    int sum = 0;
+    foreach (int value in values)
+    {
+      sum += value;
+    }
+    return sum;
+  }
+
+  // オーバーロードの定義
+  // 第一引数: values (double型の配列)
+  // 戻り値: double型
+  private static double SumOverload(params double[] values)
+  {
+    Console.WriteLine("overload I am double.");
+    double sum = 0;
+    foreach (double value in values)
     {
       sum += value;
     }
