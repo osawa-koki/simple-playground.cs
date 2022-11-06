@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "05.string": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
