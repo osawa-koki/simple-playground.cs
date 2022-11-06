@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "25.interface": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

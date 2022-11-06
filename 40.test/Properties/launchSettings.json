@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "40.test": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "35.file_directory": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

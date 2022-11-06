@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "16.enum": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

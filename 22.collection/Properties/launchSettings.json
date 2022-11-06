@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "22.collection": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

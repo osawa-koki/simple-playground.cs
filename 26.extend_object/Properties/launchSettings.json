@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "26.extend_object": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

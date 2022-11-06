@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "14.struct": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

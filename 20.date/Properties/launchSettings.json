@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "20.date": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

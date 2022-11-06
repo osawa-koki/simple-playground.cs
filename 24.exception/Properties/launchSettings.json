@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "24.exception": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

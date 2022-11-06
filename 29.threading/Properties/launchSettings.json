@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "29.threading": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

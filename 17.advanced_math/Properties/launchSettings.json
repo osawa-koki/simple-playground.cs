@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "17.advanced_math": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

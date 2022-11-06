@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "18.advanced_string": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

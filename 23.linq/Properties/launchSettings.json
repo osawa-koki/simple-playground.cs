@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "23.linq": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

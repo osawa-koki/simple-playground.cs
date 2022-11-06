@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "41.process": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

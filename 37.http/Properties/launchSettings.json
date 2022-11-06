@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "37.http": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

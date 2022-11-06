@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "34.environment": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

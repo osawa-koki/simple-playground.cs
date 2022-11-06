@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "19.bit_operation": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

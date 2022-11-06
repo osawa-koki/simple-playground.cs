@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "39.mail": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "36.stream": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

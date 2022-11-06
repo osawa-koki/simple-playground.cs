@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "33.regex": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

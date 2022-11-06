@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "28.lambda": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

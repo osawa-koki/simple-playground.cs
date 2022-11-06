@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "12.operation_on_class": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
