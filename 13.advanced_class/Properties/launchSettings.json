@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "13.advanced_class": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
