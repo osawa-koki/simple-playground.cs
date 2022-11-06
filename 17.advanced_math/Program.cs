@@ -126,19 +126,22 @@
   // これは、int型の変数にはint.MinValueまでしか値を格納できないためです。
   // 以下のコードを実行してみましょう。
 
-  var i = int.MaxValue;
-  Console.WriteLine($"i: {i}"); // 2147483647
-  i++;
-  Console.WriteLine($"i: {i}"); // -2147483648
-  i--;
-  Console.WriteLine($"i: {i}"); // 2147483647
-  i--;
-  Console.WriteLine($"i: {i}"); // 2147483646
-  
-  var j = int.MinValue;
-  Console.WriteLine($"j: {j}"); // -2147483648
-  j--;
-  Console.WriteLine($"j: {j}"); // 2147483647
+  unchecked
+  {
+    var i = int.MaxValue;
+    Console.WriteLine($"i: {i}"); // 2147483647
+    i++;
+    Console.WriteLine($"i: {i}"); // -2147483648
+    i--;
+    Console.WriteLine($"i: {i}"); // 2147483647
+    i--;
+    Console.WriteLine($"i: {i}"); // 2147483646
+
+    var j = int.MinValue;
+    Console.WriteLine($"j: {j}"); // -2147483648
+    j--;
+    Console.WriteLine($"j: {j}"); // 2147483647
+  }
 
   // 「2147483647」に1を加算すると「-2147483648」になってしまうのは、なんだかいやですよね、、、
   // そこで、オーバーフローを防ぐために、checkedキーワードを使用します。
