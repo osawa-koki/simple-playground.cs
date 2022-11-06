@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+struct Lesson
+{
+  public string Name;
+  public int Number;
+}
