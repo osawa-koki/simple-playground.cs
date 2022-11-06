@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "06.logical": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
