@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "01.fundamental": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
