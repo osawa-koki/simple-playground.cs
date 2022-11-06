@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "03.datatype": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
