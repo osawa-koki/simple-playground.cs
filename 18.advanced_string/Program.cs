@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Text;
 
 // ここでは文字列に対する処理を学習します。
 
@@ -8,6 +9,11 @@ using System.Globalization;
   string s2 = "World";
   string s3 = s1 + s2;
   Console.WriteLine($"s3: {s3}"); // HelloWorld
+
+  // また、文字列以外のデータを文字列として連結するには、
+  // Concat()メソッドを使用します。
+
+  Console.WriteLine($"{string.Concat(s1, 1, 2, 3, s2)}"); // Hello123World
 
   // 文字から文字列を作成 (C like)
   string s4 = new string(new char[]
@@ -159,5 +165,131 @@ using System.Globalization;
   // \" : ダブルクォーテーション
   
 }
+{
+  // 文字列の一部を抜き出すには、
+  // Substring()メソッドを使用します。
+  // このメソッドは、指定した位置から指定した長さ分の文字列を抜き出します。
+  // ただし、文字列がnullまたは空文字列の場合は、空文字列を返します。
+  // また、指定した位置が文字列の長さを超えている場合は、例外が発生します。
+  // 一般的にはLengthプロパティを指定して、範囲を超えないようにします。
 
+  Console.WriteLine($""" "abc".Substring(0, "abc".Length) : {"abc".Substring(0, "abc".Length)}"""); // abc
+  Console.WriteLine($""" "abc".Substring(1, "abc".Length - 1) : {"abc".Substring(1, "abc".Length - 1)}"""); // bc
+  Console.WriteLine($""" "abc".Substring(2, "abc".Length - 2) : {"abc".Substring(2, "abc".Length - 2)}"""); // c
 
+}
+{
+  // 前後の空白類似文字を削除するには
+  // Trim()メソッドを使用します。
+  // このメソッドは、文字列の前後の空白類似文字を削除した文字列を返します。
+  // ただし、文字列がnullまたは空文字列の場合は、空文字列を返します。
+
+  Console.WriteLine($""" "".Trim() : {"".Trim()}"""); // ""
+  Console.WriteLine($""" " ".Trim() : {" ".Trim()}"""); // ""
+  Console.WriteLine($""" "　".Trim() : {"　".Trim()}"""); // ""
+  Console.WriteLine($""" "a".Trim() : {"a".Trim()}"""); // a
+  Console.WriteLine($""" " a".Trim() : {" a".Trim()}"""); // a
+  Console.WriteLine($""" "　a".Trim() : {"　a".Trim()}"""); // a
+  Console.WriteLine($""" "a ".Trim() : {"a ".Trim()}"""); // a
+  Console.WriteLine($""" "a　".Trim() : {"a　".Trim()}"""); // a
+  Console.WriteLine($""" " a ".Trim() : {" a ".Trim()}"""); // a
+  Console.WriteLine($""" "　a　".Trim() : {"　a　".Trim()}"""); // a
+
+  // 右側だけ、左側だけの空白類似文字を削除するには
+  // TrimEnd()メソッド、TrimStart()メソッドを使用します。
+
+  Console.WriteLine($""" "".TrimStart() : {"".TrimStart()}"""); // ""
+  Console.WriteLine($""" " ".TrimStart() : {" ".TrimStart()}"""); // ""
+  Console.WriteLine($""" "　".TrimStart() : {"　".TrimStart()}"""); // ""
+  Console.WriteLine($""" "a".TrimStart() : {"a".TrimStart()}"""); // a
+  Console.WriteLine($""" " a".TrimStart() : {" a".TrimStart()}"""); // a
+  Console.WriteLine($""" "　a".TrimStart() : {"　a".TrimStart()}"""); // a
+  Console.WriteLine($""" "a ".TrimStart() : {"a ".TrimStart()}"""); // a<スペース>
+  Console.WriteLine($""" "a　".TrimStart() : {"a　".TrimStart()}"""); // a<全角スペース>
+  Console.WriteLine($""" " a ".TrimStart() : {" a ".TrimStart()}"""); // a<スペース>
+  Console.WriteLine($""" "　a　".TrimStart() : {"　a　".TrimStart()}"""); // a<全角スペース>
+
+  Console.WriteLine($""" "".TrimEnd() : {"".TrimEnd()}"""); // ""
+  Console.WriteLine($""" " ".TrimEnd() : {" ".TrimEnd()}"""); // ""
+  Console.WriteLine($""" "　".TrimEnd() : {"　".TrimEnd()}"""); // ""
+  Console.WriteLine($""" "a".TrimEnd() : {"a".TrimEnd()}"""); // a
+  Console.WriteLine($""" " a".TrimEnd() : {" a".TrimEnd()}"""); // <スペース>a
+  Console.WriteLine($""" "　a".TrimEnd() : {"　a".TrimEnd()}"""); // <全角スペース>a
+  Console.WriteLine($""" "a ".TrimEnd() : {"a ".TrimEnd()}"""); // a
+  Console.WriteLine($""" "a　".TrimEnd() : {"a　".TrimEnd()}"""); // a
+  Console.WriteLine($""" " a ".TrimEnd() : {" a ".TrimEnd()}"""); // <スペース>a
+  Console.WriteLine($""" "　a　".TrimEnd() : {"　a　".TrimEnd()}"""); // <全角スペース>a
+}
+{
+  // 文字列から指定した位置以降の文字列を削除するには、
+  // Remove()メソッドを使用します。
+
+  Console.WriteLine($""" "abc".Remove(0) : {"".Remove(0)}"""); // 
+  Console.WriteLine($""" "abc".Remove(1) : {"abc".Remove(1)}"""); // a
+  Console.WriteLine($""" "abc".Remove(2) : {"abc".Remove(2)}"""); // ab
+
+}
+{
+  // 文字列の一部を置換するには、
+  // Replace()メソッドを使用します。
+
+  Console.WriteLine($""" "abc".Replace("a", "A") : {"abc".Replace("a", "A")}"""); // Abc
+  Console.WriteLine($""" "abc".Replace("b", "B") : {"abc".Replace("b", "B")}"""); // aBc
+  Console.WriteLine($""" "abc".Replace("c", "C") : {"abc".Replace("c", "C")}"""); // abC
+  Console.WriteLine($""" "abc".Replace("ab", "AB") : {"abc".Replace("ab", "AB")}"""); // ABC
+  Console.WriteLine($""" "abc".Replace("bc", "BC") : {"abc".Replace("bc", "BC")}"""); // aBC
+  Console.WriteLine($""" "abc".Replace("abc", "ABC") : {"abc".Replace("abc", "ABC")}"""); // ABC
+
+  // また、置換後文字列に空文字を指定することで、
+  // 文字列の一部を削除することもできます。
+
+  Console.WriteLine($""" "abc".Replace("a", String.Empty) : {"abc".Replace("a", String.Empty)}"""); // bc
+  Console.WriteLine($""" "abc".Replace("b", String.Empty) : {"abc".Replace("b", String.Empty)}"""); // ac
+  Console.WriteLine($""" "abc".Replace("c", String.Empty) : {"abc".Replace("c", String.Empty)}"""); // ab
+  Console.WriteLine($""" "abc".Replace("ab", String.Empty) : {"abc".Replace("ab", String.Empty)}"""); // c
+  Console.WriteLine($""" "abc".Replace("bc", String.Empty) : {"abc".Replace("bc", String.Empty)}"""); // a
+  Console.WriteLine($""" "abc".Replace("abc", String.Empty) : {"abc".Replace("abc", String.Empty)}"""); //
+  
+}
+{
+  // 文字列と配列を変換するには、
+  // Split()メソッドとJoin()メソッドを使用します。
+
+  // Splitメソッドでは指定して区切り文字によって文字列を分割します。
+  // 戻り値は分割された文字列の配列です。
+
+  var split = "a,b,c".Split(',');
+  Console.WriteLine($""" "a,b,c".Split(',') : {split[0]}, {split[1]}, {split[2]}"""); // a, b, c
+
+  // Joinメソッドでは指定した区切り文字で配列の要素を連結します。
+  // 戻り値は連結された文字列です。
+
+  var join = String.Join(",", split);
+  Console.WriteLine($""" String.Join(",", split) : {join}"""); // a, b, c
+
+  // また、Splitメソッドの第二引数に分割する回数を指定することができます。
+
+  split = "a,b,c".Split(',', 2);
+  Console.WriteLine($""" "a,b,c".Split(',', 2) : {split[0]}, {split[1]}"""); // a, b,c
+  
+  // 配列については後ほど説明します。
+  // ここでは、複数のデータの集合と覚えてください。
+  
+}
+{
+  // 次に、文字列のバイトの相互変換を学習します。
+
+  // 文字列からバイトに変換するには、指定したエンコードのGetBytes()メソッドを使用します。
+  // 戻り値はバイトの配列です。
+
+  var bytes = Encoding.UTF8.GetBytes("abc");
+  Console.WriteLine($""" Encoding.UTF8.GetBytes("abc") : {bytes[0]}, {bytes[1]}, {bytes[2]}"""); // 97, 98, 99
+
+  // バイトから文字列に変換するには、指定したエンコードのGetString()メソッドを使用します。
+  // 戻り値は文字列です。
+
+  var str = Encoding.UTF8.GetString(bytes);
+  Console.WriteLine($""" Encoding.UTF8.GetString(bytes) : {str}"""); // abc
+
+  // バイト型については後ほど説明します。
+}
