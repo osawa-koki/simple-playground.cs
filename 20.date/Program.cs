@@ -39,6 +39,12 @@ using System.Globalization;
 
   // >>> コンソール
   // new DateTime(1998, 10, 25, 12, 34, 56, 789, DateTimeKind.Unspecified) -> 1998/10/25 12:34:56.789
+
+  // ===== ===== ===== ===== =====
+
+  // 現在の日付データは以下のように作成できます。
+
+  DateTime dt_7 = DateTime.Now;
 }
 {
   // 日付型へのパース
@@ -404,4 +410,129 @@ using System.Globalization;
 
   // >>> コンソール
   // dt1.Ticks / 10000000 / 60 / 60 / 24 / 365 -> 1999
+}
+{
+  // TimeSpane型
+  // TimeSpan型は、時間を表す型です。
+  // TimeSpan型のデータは、以下のように生成することができます。
+
+  TimeSpan ts1 = new(1, 2, 3, 4, 5);
+
+  // この場合、1日2時間3分4秒5ミリ秒を表すTimeSpan型のデータが生成されます。
+
+  Console.WriteLine($"ts1 -> {ts1}");
+
+  // >>> コンソール
+  // ts1 -> 1.02:03:04.0050000
+
+  // ===== ===== ===== ===== =====
+
+  // これを使用して2つの日付間の差分を取得しましょう♪
+
+  DateTime dt1 = new(1998, 10, 25, 12, 34, 56, 789);
+  DateTime dt2 = DateTime.Now;
+
+  TimeSpan ts_frommybirth = dt2 - dt1;
+
+  Console.WriteLine($"ts2 -> {ts_frommybirth}");
+
+  // >>> コンソール
+  // ts2 -> *****
+
+  // ===== ===== ===== ===== =====
+
+  // TimeSpan型は足し算と引き算が可能です。
+
+  TimeSpan ts2 = new(1, 2, 3, 4, 5);
+  TimeSpan ts3 = new(2, 3, 4, 5, 6);
+
+  Console.WriteLine($"ts2 + ts3 -> {ts2 + ts3}");
+
+  // >>> コンソール
+  // ts2 + ts3 -> 3.05:07:09.0110000
+
+  Console.WriteLine($"ts2 - ts3 -> {ts2 - ts3}");
+
+  // >>> コンソール
+  // ts2 - ts3 -> -1.01:01:01.0010000
+}
+{
+  // ある日付データを基に、一定期間前(後)の日付を算出してみましょう♪
+  // Add***メソッドを使用します。
+  // 負の値を指定することで、「前」を表現できます。
+  //
+  // メソッドには以下の種類があります。
+  // AddYears : 年
+  // AddMonths : 月
+  // AddDays : 日
+  // AddHours : 時
+  // AddMinutes : 分
+  // AddSeconds : 秒
+  // AddMilliseconds : ミリ秒
+  // AddTicks : Ticks
+
+  DateTime dt1 = new(1998, 10, 25, 12, 34, 56, 789);
+
+  // 1日前の日付を算出する場合
+  DateTime dt2 = dt1.AddDays(-1);
+
+  Console.WriteLine($"dt2 -> {dt2}");
+
+  // >>> コンソール
+  // dt2 -> 1998/10/24 12:34:56
+
+  // 1時間後の日付を算出する場合
+  DateTime dt3 = dt1.AddHours(1);
+
+  Console.WriteLine($"dt3 -> {dt3}");
+
+  // >>> コンソール
+  // dt3 -> 1998/10/25 13:34:56
+
+  // 1分前の日付を算出する場合
+  DateTime dt4 = dt1.AddMinutes(-1);
+
+  Console.WriteLine($"dt4 -> {dt4}");
+
+  // >>> コンソール
+  // dt4 -> 1998/10/25 12:33:56
+
+  // 1秒後の日付を算出する場合
+  DateTime dt5 = dt1.AddSeconds(1);
+
+  Console.WriteLine($"dt5 -> {dt5}");
+
+  // >>> コンソール
+  // dt5 -> 1998/10/25 12:34:57
+
+  // 1ミリ秒前の日付を算出する場合
+  DateTime dt6 = dt1.AddMilliseconds(-1);
+
+  Console.WriteLine($"dt6 -> {dt6}");
+
+  // >>> コンソール
+  // dt6 -> 1998/10/25 12:34:56.7880000
+}
+{
+  // DateTime型とTimeSpan型の演算
+  // DateTime型とTimeSpan型は、演算が可能です。
+
+  DateTime dt1 = new(1998, 10, 25, 12, 34, 56, 789);
+  TimeSpan ts1 = new(1, 2, 3, 4, 5);
+
+  // DateTime型 + TimeSpan型
+  DateTime dt2 = dt1 + ts1;
+
+  Console.WriteLine($"dt2 -> {dt2}");
+
+  // >>> コンソール
+  // dt2 -> 1999/10/26 14:38:00.7940000
+
+  // DateTime型 - TimeSpan型
+  DateTime dt3 = dt1 - ts1;
+
+  Console.WriteLine($"dt3 -> {dt3}");
+
+  // >>> コンソール
+  // dt3 -> 1997/10/24 10:31:52.7840000
 }

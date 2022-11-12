@@ -3,91 +3,91 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00.helloworld", "00.helloworld\00.helloworld.csproj", "{4892D875-16DC-438C-B8CA-657A56A11A8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.helloworld", "00.helloworld\00.helloworld.csproj", "{4892D875-16DC-438C-B8CA-657A56A11A8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.fundamental", "01.fundamental\01.fundamental.csproj", "{1ACF2B21-A9A8-429A-8D56-AA65DD548E2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.fundamental", "01.fundamental\01.fundamental.csproj", "{1ACF2B21-A9A8-429A-8D56-AA65DD548E2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.variable", "02.variable\02.variable.csproj", "{28BD7C01-1A91-4EDF-A835-7F01EC4C5781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.variable", "02.variable\02.variable.csproj", "{28BD7C01-1A91-4EDF-A835-7F01EC4C5781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.datatype", "03.datatype\03.datatype.csproj", "{4AB81F81-263A-4C9B-9200-5C3F94933800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.datatype", "03.datatype\03.datatype.csproj", "{4AB81F81-263A-4C9B-9200-5C3F94933800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.numeric", "04.numeric\04.numeric.csproj", "{1FDB53D0-726D-4518-A888-F17B5A238D2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.numeric", "04.numeric\04.numeric.csproj", "{1FDB53D0-726D-4518-A888-F17B5A238D2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.string", "05.string\05.string.csproj", "{5090EA94-07A8-4ED4-A6A2-1CA57C642EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05.string", "05.string\05.string.csproj", "{5090EA94-07A8-4ED4-A6A2-1CA57C642EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.logical", "06.logical\06.logical.csproj", "{C3809E70-D835-48C2-AD97-3B63DA1AC981}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.logical", "06.logical\06.logical.csproj", "{C3809E70-D835-48C2-AD97-3B63DA1AC981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.condition", "07.condition\07.condition.csproj", "{977979D2-7E31-4687-9719-25E021A35222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07.condition", "07.condition\07.condition.csproj", "{977979D2-7E31-4687-9719-25E021A35222}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.loop", "08.loop\08.loop.csproj", "{D29227EF-2BB5-4651-AFDB-97EB967328A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08.loop", "08.loop\08.loop.csproj", "{D29227EF-2BB5-4651-AFDB-97EB967328A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.function", "09.function\09.function.csproj", "{6C76A345-46B2-4306-B70A-0168987D75BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09.function", "09.function\09.function.csproj", "{6C76A345-46B2-4306-B70A-0168987D75BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.class", "10.class\10.class.csproj", "{316F8741-46D5-4603-9D08-64B8F2F21511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.class", "10.class\10.class.csproj", "{316F8741-46D5-4603-9D08-64B8F2F21511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.inheritance", "11.inheritance\11.inheritance.csproj", "{F2281214-71A8-47FF-8501-5F21B3DA0C9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.inheritance", "11.inheritance\11.inheritance.csproj", "{F2281214-71A8-47FF-8501-5F21B3DA0C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.operation_on_class", "12.operation_on_class\12.operation_on_class.csproj", "{4552425E-E0FC-4889-AF55-AD51C18218A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.operation_on_class", "12.operation_on_class\12.operation_on_class.csproj", "{4552425E-E0FC-4889-AF55-AD51C18218A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.advanced_class", "13.advanced_class\13.advanced_class.csproj", "{F50DAA80-A76F-48ED-A125-D84EA84F896B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13.advanced_class", "13.advanced_class\13.advanced_class.csproj", "{F50DAA80-A76F-48ED-A125-D84EA84F896B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.struct", "14.struct\14.struct.csproj", "{8FBAE737-81D8-4DEA-A271-377543D49D96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14.struct", "14.struct\14.struct.csproj", "{8FBAE737-81D8-4DEA-A271-377543D49D96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.record", "15.record\15.record.csproj", "{0B3AD087-69B6-4539-A0F6-4D3594AFED9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15.record", "15.record\15.record.csproj", "{0B3AD087-69B6-4539-A0F6-4D3594AFED9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.enum", "16.enum\16.enum.csproj", "{4DE4FCCA-7D97-47A2-BD01-FC08AC075135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16.enum", "16.enum\16.enum.csproj", "{4DE4FCCA-7D97-47A2-BD01-FC08AC075135}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.advanced_math", "17.advanced_math\17.advanced_math.csproj", "{8916B408-8240-4E50-B447-E3E005395B1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17.advanced_math", "17.advanced_math\17.advanced_math.csproj", "{8916B408-8240-4E50-B447-E3E005395B1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.advanced_string", "18.advanced_string\18.advanced_string.csproj", "{45C64664-D591-4E46-9C29-DFF95DE81611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "18.advanced_string", "18.advanced_string\18.advanced_string.csproj", "{45C64664-D591-4E46-9C29-DFF95DE81611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19.bit_operation", "19.bit_operation\19.bit_operation.csproj", "{FC627F35-CE08-4333-B2C6-0E6915FA0A91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "19.bit_operation", "19.bit_operation\19.bit_operation.csproj", "{FC627F35-CE08-4333-B2C6-0E6915FA0A91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20.date", "20.date\20.date.csproj", "{A37EDEA1-5E5D-4881-9D8B-3ADD34BE40B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20.date", "20.date\20.date.csproj", "{A37EDEA1-5E5D-4881-9D8B-3ADD34BE40B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21.nullable_nunnullable", "21.nullable_nunnullable\21.nullable_nunnullable.csproj", "{64829899-D54B-4A52-B244-638A65B88DF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "21.nullable_nunnullable", "21.nullable_nunnullable\21.nullable_nunnullable.csproj", "{64829899-D54B-4A52-B244-638A65B88DF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22.collection", "22.collection\22.collection.csproj", "{82A2A428-CC01-4FD9-B5FF-71C1EACC5490}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22.collection", "22.collection\22.collection.csproj", "{82A2A428-CC01-4FD9-B5FF-71C1EACC5490}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23.linq", "23.linq\23.linq.csproj", "{2DD3947C-DEC3-46CE-9F5D-F8AD72A4E8AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "23.linq", "23.linq\23.linq.csproj", "{2DD3947C-DEC3-46CE-9F5D-F8AD72A4E8AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24.exception", "24.exception\24.exception.csproj", "{5162E53D-CBF5-446B-B6B4-09EE6A83948C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "24.exception", "24.exception\24.exception.csproj", "{5162E53D-CBF5-446B-B6B4-09EE6A83948C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "25.interface", "25.interface\25.interface.csproj", "{453C7008-B2EA-40C0-895D-FCDCF4DF3CAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "25.interface", "25.interface\25.interface.csproj", "{453C7008-B2EA-40C0-895D-FCDCF4DF3CAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26.extend_object", "26.extend_object\26.extend_object.csproj", "{250F0763-25A1-4AD3-9A01-EEAD15412277}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "26.extend_object", "26.extend_object\26.extend_object.csproj", "{250F0763-25A1-4AD3-9A01-EEAD15412277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "27.generic", "27.generic\27.generic.csproj", "{E709603E-CEC8-415A-A3BB-D3D30BA7538B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "27.generic", "27.generic\27.generic.csproj", "{E709603E-CEC8-415A-A3BB-D3D30BA7538B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "28.lambda", "28.lambda\28.lambda.csproj", "{775921FF-087D-4920-8D64-4D4521832307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "28.lambda", "28.lambda\28.lambda.csproj", "{775921FF-087D-4920-8D64-4D4521832307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "29.threading", "29.threading\29.threading.csproj", "{83A5C073-CD32-47EC-8402-D5FFCEAA2CC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "29.threading", "29.threading\29.threading.csproj", "{83A5C073-CD32-47EC-8402-D5FFCEAA2CC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30.task", "30.task\30.task.csproj", "{F5BBA5F8-62CA-4857-BB51-73B7755B7214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "30.task", "30.task\30.task.csproj", "{F5BBA5F8-62CA-4857-BB51-73B7755B7214}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "31.parallel", "31.parallel\31.parallel.csproj", "{B8CD590F-AAB0-4D4C-9A55-08A2103FEEA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "31.parallel", "31.parallel\31.parallel.csproj", "{B8CD590F-AAB0-4D4C-9A55-08A2103FEEA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "32.reflection", "32.reflection\32.reflection.csproj", "{ADD6D1E7-C837-43ED-884D-71289CE44581}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "32.reflection", "32.reflection\32.reflection.csproj", "{ADD6D1E7-C837-43ED-884D-71289CE44581}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "33.regex", "33.regex\33.regex.csproj", "{C5137ACE-14E8-408C-9298-1C1F6715C1D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "33.regex", "33.regex\33.regex.csproj", "{C5137ACE-14E8-408C-9298-1C1F6715C1D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "34.environment", "34.environment\34.environment.csproj", "{8994CD23-297C-434F-BB18-5DB0C7A66115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "34.environment", "34.environment\34.environment.csproj", "{8994CD23-297C-434F-BB18-5DB0C7A66115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "35.file_directory", "35.file_directory\35.file_directory.csproj", "{EDC2C6B8-5FE7-4FC2-84A5-8DD964B50D3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35.file_directory", "35.file_directory\35.file_directory.csproj", "{EDC2C6B8-5FE7-4FC2-84A5-8DD964B50D3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "36.stream", "36.stream\36.stream.csproj", "{47960757-17B6-4619-8FF9-0DE00D356C03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "36.stream", "36.stream\36.stream.csproj", "{47960757-17B6-4619-8FF9-0DE00D356C03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38.database", "38.database\38.database.csproj", "{768418AA-844A-4C20-864C-C3E54A396D13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "38.database", "38.database\38.database.csproj", "{768418AA-844A-4C20-864C-C3E54A396D13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "40.test", "40.test\40.test.csproj", "{D6AF3D03-9A3E-40A2-A229-C9CD13848CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "40.test", "40.test\40.test.csproj", "{D6AF3D03-9A3E-40A2-A229-C9CD13848CD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "41.process", "41.process\41.process.csproj", "{BB9767F5-A8D7-4DC6-8E33-74FE75E757C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "41.process", "41.process\41.process.csproj", "{BB9767F5-A8D7-4DC6-8E33-74FE75E757C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "42.cryptography", "42.cryptography\42.cryptography.csproj", "{FA363D0F-10CE-473D-B172-77F21A3B2E28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "42.cryptography", "42.cryptography\42.cryptography.csproj", "{FA363D0F-10CE-473D-B172-77F21A3B2E28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "37.network", "37.network\37.network.csproj", "{75D78AC9-880D-4248-B304-63220C9E9692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "37.network", "37.network\37.network.csproj", "{75D78AC9-880D-4248-B304-63220C9E9692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "39.namespace", "39.namespace\39.namespace.csproj", "{73FE890D-44A3-429D-B0D2-4FF934089963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "39.namespace", "39.namespace\39.namespace.csproj", "{73FE890D-44A3-429D-B0D2-4FF934089963}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
