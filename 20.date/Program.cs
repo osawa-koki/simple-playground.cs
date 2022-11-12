@@ -38,3 +38,30 @@
   // >>> コンソール
   // new DateTime(1998, 10, 25, 12, 34, 56, 789, DateTimeKind.Unspecified) -> 1998/10/25 12:34:56.789
 }
+{
+  // 日付型へのパース
+
+  DateTime dt_1 = DateTime.Parse("1998/10/25");
+  Console.WriteLine($"DateTime.Parse(\"1998/10/25\") -> {dt_1}");
+
+  // >>> コンソール
+  // DateTime.Parse("1998/10/25") -> 1998/10/25 0:00:00
+
+  DateTime dt_2 = DateTime.Parse("1998/10/25 12:34:56");
+  Console.WriteLine($"DateTime.Parse(\"1998/10/25 12:34:56\") -> {dt_2}");
+
+  // >>> コンソール
+  // DateTime.Parse("1998/10/25 12:34:56") -> 1998/10/25 12:34:56
+
+  DateTime dt_3 = DateTime.Parse("1998/10/25 12:34:56.789");
+  Console.WriteLine($"DateTime.Parse(\"1998/10/25 12:34:56.789\") -> {dt_3}");
+
+  // >>> コンソール
+  // DateTime.Parse("1998/10/25 12:34:56.789") -> 1998/10/25 12:34:56.789
+
+  DateTime dt_4 = DateTime.Parse("1998/10/25 12:34:56.789 +09:00");
+  Console.WriteLine($"DateTime.Parse(\"1998/10/25 12:34:56.789 +09:00\") -> {dt_4}");
+
+  // >>> コンソール
+  // DateTime.Parse("1998/10/25 12:34:56.789 +09:00") -> 1998/10/25 12:34:56.789
+}
