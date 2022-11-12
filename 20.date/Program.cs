@@ -188,3 +188,43 @@ using System.Globalization;
   // >>> コンソール
   // DateTime.TryParse("[failed] Hello World", out dt_6) -> 0001/01/01 0:00:00
 }
+{
+  // 日付型を文字列に変換するには、ToStringメソッドを使用します。
+  // ToStringメソッドは、オーバーロードされているため、引数を指定することで、変換するフォーマットを指定することができます。
+  // ToStringメソッドの引数では、以下のようなフォーマットを指定することができます。
+  // y : 年
+  // M : 月
+  // d : 日
+  // H : 時
+  // m : 分
+  // s : 秒
+  // f : ミリ秒
+  // t : 時刻の区切り文字
+  // z : タイムゾーン
+
+  DateTime dt = new(1998, 10, 25, 12, 34, 56, 789);
+
+  Console.WriteLine($"dt.ToString(\"yyyy/MM/dd HH:mm:ss.fff\") -> {dt.ToString("yyyy/MM/dd HH:mm:ss.fff")}");
+
+  // >>> コンソール
+  // dt.ToString("yyyy/MM/dd HH:mm:ss.fff") -> 1998/10/25 12:34:56.789
+
+  Console.WriteLine($"dt.ToString(\"yyyy/MM/dd HH:mm:ss.fff zzz\") -> {dt.ToString("yyyy/MM/dd HH:mm:ss.fff zzz")}");
+
+  // >>> コンソール
+  // dt.ToString("yyyy/MM/dd HH:mm:ss.fff zzz") -> 1998/10/25 12:34:56.789 +09:00
+
+  Console.WriteLine($"dt.ToString(\"yyyy-MM-dd HH:mm:ss.fff\") -> {dt.ToString("yyyy-MM-dd HH:mm:ss.fff")}");
+
+  // >>> コンソール
+  // dt.ToString("yyy-/MM-dd HH:mm:ss.fff") -> 1998-10-25 12:34:56.789
+
+  // ===== ===== ===== ===== =====
+  // ちなみに、省略記法が使えます。
+  // ===== ===== ===== ===== =====
+
+  Console.WriteLine($"dt.ToString(\"yyyy/MM/dd HH:mm:ss.fff\") -> {dt:yyyy/MM/dd HH:mm:ss.fff}");
+
+  // >>> コンソール
+  // dt.ToString("yyyy/MM/dd HH:mm:ss.fff") -> 1998/10/25 12:34:56.789
+}
