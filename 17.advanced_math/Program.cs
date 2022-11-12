@@ -186,4 +186,57 @@
   // C#プロジェクトファイルが変更された場合のことを考えてコメントアウトしています。
 
 }
+{
+  // 出力フォーマットの指定
+  // ToStringメソッドの引数で文字列化時のフォーマットを指定できます。
+  // フォーマット指定子には、以下のものがあります。
+  // D: 10進数
+  // X: 16進数
+  // F: 浮動小数点数
+  // E: 指数表記
+  // N: 数値のグループ化
+  // C: 貨幣
+  // P: パーセント
 
+  // 以下のコードを実行してみましょう。
+
+  // ちなみに、「i:★★★」という記法は、「i.ToString("★★★")」と同じです。
+
+  var i = 123;
+  Console.WriteLine($"i: {i}"); // 123
+  Console.WriteLine($"i: {i:D}"); // 123
+  Console.WriteLine($"i: {i:X}"); // 7B
+  Console.WriteLine($"i: {i:F}"); // 123.000000
+  Console.WriteLine($"i: {i:E}"); // 1.230000E+002
+  Console.WriteLine($"i: {i:N}"); // 123
+  Console.WriteLine($"i: {i:C}"); // ¥123
+  Console.WriteLine($"i: {i:P}"); // 12,300.00%
+
+  // また、ToStringメソッドの引数には、カルチャーを指定することもできます。
+
+  // 以下のコードを実行してみましょう。
+
+  var j = 123;
+  Console.WriteLine($"j: {j:D0}"); // 123
+  Console.WriteLine($"j: {j:D3}"); // 123
+  Console.WriteLine($"j: {j:D4}"); // 0123
+  Console.WriteLine($"j: {j:D5}"); // 00123
+  Console.WriteLine($"j: {j:D6}"); // 000123
+  Console.WriteLine($"j: {j:D7}"); // 0000123
+  Console.WriteLine($"j: {j:D8}"); // 00000123
+
+  // また、カルチャーを指定することで、小数点以下の桁数を指定することもできます。
+
+  // 以下のコードを実行してみましょう。
+
+  var k = 123.456;
+  Console.WriteLine($"k: {k:F0}"); // 123
+  Console.WriteLine($"k: {k:F1}"); // 123.5
+  Console.WriteLine($"k: {k:F2}"); // 123.46
+  Console.WriteLine($"k: {k:F3}"); // 123.456
+  Console.WriteLine($"k: {k:F4}"); // 123.4560
+  Console.WriteLine($"k: {k:F5}"); // 123.45600
+  Console.WriteLine($"k: {k:F6}"); // 123.456000
+  Console.WriteLine($"k: {k:F7}"); // 123.4560000
+  Console.WriteLine($"k: {k:F8}"); // 123.45600000
+}
