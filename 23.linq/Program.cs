@@ -651,22 +651,78 @@ using System.Collections.Generic;
   // ・ データの重複を除去して結合する
 
   // Unionメソッドは、データの重複を除去して結合するメソッドです。
+
+  // では、さっそくUnion文を使用して、データの重複を除去して結合してみましょう。
+
+  // まずは、配列を用意します。
+  var array1 = new[] { 1, 2, 3, 4, 5 };
+  var array2 = new[] { 3, 4, 5, 6, 7 };
+
+  // 次に、Unionメソッドを使用して、配列の重複を除去して結合します。
+  var array_union = array1.Union(array2);
+
+  Console.WriteLine($"array.Union() -> {string.Join(", ", array_union)}");
+
+  // >>> 実行結果
+  // array.Union() -> 1, 2, 3, 4, 5, 6, 7
 }
 {
   // Intersect
   // ・ データの重複を除去して共通のデータを取得する
 
   // Intersectメソッドは、データの重複を除去して共通のデータを取得するメソッドです。
+
+  // では、さっそくIntersect文を使用して、データの重複を除去して共通のデータを取得してみましょう。
+
+  // まずは、配列を用意します。
+  var array1 = new[] { 1, 2, 3, 4, 5 };
+  var array2 = new[] { 3, 4, 5, 6, 7 };
+
+  // 次に、Intersectメソッドを使用して、配列の重複を除去して共通のデータを取得します。
+  var array_intersect = array1.Intersect(array2);
+
+  Console.WriteLine($"array.Intersect() -> {string.Join(", ", array_intersect)}");
+
+  // >>> 実行結果
+  // array.Intersect() -> 3, 4, 5
 }
 {
   // Except
   // ・ データの重複を除去して指定したデータを除去する
 
   // Exceptメソッドは、データの重複を除去して指定したデータを除去するメソッドです。
+
+  // では、さっそくExcept文を使用して、データの重複を除去して指定したデータを除去してみましょう。
+
+  // まずは、配列を用意します。
+  var array1 = new[] { 1, 2, 3, 4, 5 };
+  var array2 = new[] { 3, 4, 5, 6, 7 };
+
+  // 次に、Exceptメソッドを使用して、配列の重複を除去して指定したデータを除去します。
+  var array_except = array1.Except(array2);
+
+  Console.WriteLine($"array.Except() -> {string.Join(", ", array_except)}");
+
+  // >>> 実行結果
+  // array.Except() -> 1, 2
 }
 {
   // Concat
   // ・ データを結合する
 
   // Concatメソッドは、データを結合するメソッドです。
+
+  // では、さっそくConcat文を使用して、データを結合してみましょう。
+
+  // まずは、配列を用意します。
+  var array1 = new[] { 1, 2, 3, 4, 5 };
+  var array2 = new[] { 3, 4, 5, 6, 7 };
+
+  // 次に、Concatメソッドを使用して、配列を結合します。
+  var array_concat = array1.Concat(array2);
+
+  Console.WriteLine($"array.Concat() -> {string.Join(", ", array_concat)}");
+
+  // >>> 実行結果
+  // array.Concat() -> 1, 2, 3, 4, 5, 3, 4, 5, 6, 7
 }
