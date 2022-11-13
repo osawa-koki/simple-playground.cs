@@ -726,3 +726,6 @@ using System.Collections.Generic;
   // >>> 実行結果
   // array.Concat() -> 1, 2, 3, 4, 5, 3, 4, 5, 6, 7
 }
+{
+  // TODO
+}
