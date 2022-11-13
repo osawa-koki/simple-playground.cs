@@ -602,6 +602,49 @@ using System.Collections.Generic;
   // ・ データの指定したインデックスの値を取得する
 
   // ElementAtメソッドは、データの指定したインデックスの値を取得するメソッドです。
+
+  // では、さっそくElementAt文を使用して、データの指定したインデックスの値を取得してみましょう。
+
+  // まずは、配列を用意します。
+  var array = new[] { 1, 2, 3, 4, 5 };
+
+  // 次に、ElementAtメソッドを使用して、配列の指定したインデックスの値を取得します。
+  var array_element = array.ElementAt(2);
+
+  Console.WriteLine($"array.ElementAt() -> {array_element}");
+
+  // >>> 実行結果
+  // array.ElementAt() -> 3
+
+  // また、ElementAtメソッドは、指定したインデックスの値が存在しない場合に、例外を発生させます。
+  // 例外を発生させない場合には、ElementAtOrDefaultメソッドを使用します。
+}
+{
+  // ElementAtOrDefault
+  // ・ データの指定したインデックスの値を取得する（データが存在しない場合は、デフォルト値を取得する）
+
+  // ElementAtOrDefaultメソッドは、データの指定したインデックスの値を取得する（データが存在しない場合は、デフォルト値を取得する）メソッドです。
+
+  // では、さっそくElementAtOrDefault文を使用して、データの指定したインデックスの値を取得してみましょう。
+
+  // まずは、配列を用意します。
+  var array = new[] { 1, 2, 3, 4, 5 };
+
+  // 次に、ElementAtOrDefaultメソッドを使用して、配列の指定したインデックスの値を取得します。
+  var array_element = array.ElementAtOrDefault(2);
+
+  Console.WriteLine($"array.ElementAtOrDefault() -> {array_element}");
+
+  // >>> 実行結果
+  // array.ElementAtOrDefault() -> 3
+
+  // また、ElementAtOrDefaultメソッドは、指定したインデックスの値が存在しない場合に、デフォルト値を返します。
+  var array_element2 = array.ElementAtOrDefault(10);
+
+  Console.WriteLine($"array.ElementAtOrDefault() -> {array_element2}");
+
+  // >>> 実行結果
+  // array.ElementAtOrDefault() -> 0
 }
 {
   // Union
